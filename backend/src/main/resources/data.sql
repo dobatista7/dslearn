@@ -13,4 +13,10 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
-INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp HTML','https://pixabay.com/illustrations/training-course-training-3250007/','https://upload.wikimedia.org/wikipedia/commons/1/1f/Switch-course-book-grey.svg'); 
+INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp HTML','https://pixabay.com/illustrations/training-course-training-3250007/','https://upload.wikimedia.org/wikipedia/commons/1/1f/Switch-course-book-grey.svg');
+
+INSERT INTO tb_offer(edition, start_Moment, end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2023-07-13T20:50:07.12345Z',TIMESTAMP WITH TIME ZONE '2024-07-13T20:50:07.12345Z',1);
+INSERT INTO tb_offer(edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2023-08-13T20:50:07.12345Z',TIMESTAMP WITH TIME ZONE '2024-08-13T20:50:07.12345Z',1);
+
+
+ 
