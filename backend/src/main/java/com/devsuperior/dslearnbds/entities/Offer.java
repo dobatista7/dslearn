@@ -33,13 +33,15 @@ public class Offer implements Serializable {
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant endMoment;
 	
-	
 	@ManyToOne
 	@JoinColumn(name= "course_id")
 	private Course course;
-	
+		
 	@OneToMany(mappedBy = "offer")
 	private List<Resource> resources = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "offer")
+	private List<Topic> topics = new ArrayList<>();	
 	
 	public Offer() {
 		
@@ -92,6 +94,10 @@ public class Offer implements Serializable {
 
 	public void setCourse(Course course) {
 		this.course = course;
+	}
+		
+	public List<Topic> getTopics() {
+		return topics;
 	}
 	
 	

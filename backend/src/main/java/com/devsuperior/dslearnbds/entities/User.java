@@ -38,8 +38,7 @@ public class User implements Serializable {
 	
 	@OneToMany(mappedBy = "user")
 	private List<Notification> notifications = new ArrayList<>();
-	
-	
+		
 	public User(){
 		
 	}
@@ -83,12 +82,17 @@ public class User implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	public List<Notification> getNotifications() {
+		return notifications;
+	}
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
-
+	
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
