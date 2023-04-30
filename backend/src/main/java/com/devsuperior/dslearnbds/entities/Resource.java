@@ -89,7 +89,7 @@ public class Resource implements Serializable {
 		return imgUri;
 	}
 
-	public void setImgUri(String imgRri) {
+	public void setImgUri(String imgUri) {
 		this.imgUri = imgUri;
 	}
 
